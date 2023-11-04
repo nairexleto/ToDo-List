@@ -1,78 +1,81 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.container{
-    min-height: 100vh;
-    width: 100%;
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
 }
 /*page1*/
-#signin{
-    min-height: 100vh;
-    float: left;
-    width: 50%;
-    background-color: rgb(241, 246, 252);
-    text-align: center;  
+#signin {
+  height: 450px;
+  width: 35%;
+  border-color: #4971b6;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 7%;
+  position: absolute;
 }
-#fb{
-    margin-top: 15px;
-    color: #4971b6;
-    margin-right: 10px;
-    font-size: xx-large;
-    margin-bottom: 20px;
+#fb {
+  margin-top: 15px;
+  color: #4971b6;
+  margin-right: 10px;
+  font-size: xx-large;
+  margin-bottom: 20px;
 }
-#ggl{
-    color: black;
-    margin-top: 15px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    font-size: xx-large;
+#ggl {
+  color: black;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: xx-large;
 }
-.user{
-    display: block;
-    margin-left: 29%;
-    width: 250px;
-    height: 35px;
-    padding-left: 5px;
-    margin-top: 20px;
+.user {
+  display: block;
+  margin-left: 29%;
+  width: 250px;
+  height: 35px;
+  padding-left: 5px;
+  margin-top: 20px;
 }
-h1{
-    margin-top: 90px;
+h1 {
+  margin-top: 90px;
 }
-h5{
-    margin-top: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h5 {
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.btn{
-    margin-top: 30px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    background-color: rgb(22 32 133);
-    color: aliceblue;
-    font-size: x-large;
-    border-radius: 12px;
-    border-color: aliceblue;
+.btn {
+  border-color: aliceblue;
 }
-#signup{
-    min-height: 100vh;
-    float: right;
-    width: 50%;
-    background-color: rgb(45 56 167);
-    text-align: center;
+#pic {
+  background-image: url(setup.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(5px);
 }
 
-/*page2*/
-#signup{
-    color: aliceblue
+/*#signup {
+  min-height: 100vh;
+  float: right;
+  width: 50%;
+  background-color: rgb(45 56 167);
+  text-align: center;
 }
-#h1{
-    margin-top: 180px;
-    
+
+/*page2
+#signup {
+  color: aliceblue;
 }
-#h4{
-    margin-top: 35px;
-    margin-bottom: 30px;
+#h1 {
+  margin-top: 180px;
 }
+#h4 {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}*/

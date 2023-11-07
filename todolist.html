@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="todolist.css" />
   </head>
   <body>
-    <header class="header">
-      <h2>TIC-TAC</h2>
-      <nav class="navbar">
-        <ul id="navitem">
-          <a href=""><li>Home</li></a>
-          <a href=""><li>Setting</li></a>
-          <a href=""><li>About Us</li></a>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <div id="box">
-        <input id="input" type="text" placeholder="add a task" />
-        <input type="button" value="+" id="addbtn" onclick="add()" />
-        <ul id="task"></ul>
+    <div id="pic">
+      <header class="header">
+        <h2>TIC-TAC</h2>
+        <nav class="navbar">
+          <ul id="navitem">
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Setting</li></a>
+            <a href=""><li>About Us</li></a>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <div id="box">
+          <br />
+          <label id="time"></label> <br />
+          <input id="input" type="text" placeholder="add a task" />
+          <input type="time" id="date" value="" />
+          <input type="button" value="+" id="addbtn" onclick="add()" />
+          <ul id="task"></ul>
+        </div>
       </div>
     </div>
     <script src="front.js"></script>
   </body>
 </html>
+

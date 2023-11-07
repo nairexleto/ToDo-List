@@ -8,20 +8,59 @@
   </head>
   <body>
     <div class="container">
+      <div id="pic"></div>
       <div id="signup">
         <h3>Create your account</h3>
         <h5>start controling your life with us</h5>
-        <input type="text" class="info" placeholder="FirstName" />
-        <input type="text" class="info" placeholder="LastName" />
-        <input type="date" class="info" value="2000-05-05" />
-        <input type="text" class="info" placeholder="Username" />
-        <input type="password" class="info" placeholder="NewPassword" />
-        <input type="password" class="info" placeholder="confirmUrPassword" />
-        <input id="reseat" type="submit" value="reseat" />
-        <input id="submit" type="submit" value="submit" />
+        <form action="">
+          <input
+            type="text"
+            class="info"
+            placeholder="FirstName"
+            minlength="3"
+            maxlength="20"
+            required
+          />
+          <input
+            type="text"
+            class="info"
+            placeholder="LastName"
+            minlength="3"
+            maxlength="20"
+            required
+          />
+          <input id="date" type="date" class="info" value="2000-05-05" />
+          <input
+            type="text"
+            class="info"
+            placeholder="Username"
+            minlength="3"
+            maxlength="20"
+            required
+          />
+          <input
+            type="password"
+            id="pswrd"
+            class="info"
+            placeholder="NewPassword"
+            minlength="6"
+            maxlength="20"
+            required
+          />
+          <input
+            type="password"
+            id="pswrdc"
+            class="info"
+            placeholder="confirmUrPassword"
+            minlength="6"
+            maxlength="20"
+            required
+          />
+          <input id="reseat" type="reset" value="reseat" />
+          <input id="submit" type="submit" value="submit" onclick="check()" />
+        </form>
       </div>
-
-      <div id="pic"></div>
     </div>
+    <script src="time.js"></script>
   </body>
 </html>

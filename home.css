@@ -12,11 +12,11 @@
   background-position: center;
 }
 body {
+  background-attachment: fixed; /* optionnel - pour fixer le fond en place */
+  background-position: center center;
   background-image: url("back.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* optionnel - pour fixer le fond en place */
-  background-position: center center;
 }
 .header {
   background: none;

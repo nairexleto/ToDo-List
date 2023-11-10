@@ -21,10 +21,10 @@ function addate() {
   }
   myinser.value = "";
 }
+
+/*condition of current time*/
 document.getElementById("inser").min = new Date(
   new Date().getTime() - new Date().getTimezoneOffset() * 60000
 )
   .toISOString()
   .split("T")[0];
-
-const time = document.getElementById("date");

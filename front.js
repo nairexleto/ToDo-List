@@ -25,6 +25,7 @@ function zero(time) {
 
 const btn = document.getElementById("addbtn");
 const myinput = document.getElementById("input");
+const time = document.getElementById("date");
 
 function add() {
   if (myinput.value === "") {
@@ -32,10 +33,10 @@ function add() {
   } else {
     const myList = document.querySelector("#task");
     const listItem = document.createElement("li");
-    listItem.textContent = myinput.value;
+    listItem.textContent = myinput.value + time.value;
 
     // Ajouter le bouton de suppression
-    const deleteTaskBtn = document.createElement("button");
+    const deleteTaskBtn = document.createElement("buttonx");
     deleteTaskBtn.textContent = "x";
     deleteTaskBtn.addEventListener("click", function () {
       myList.removeChild(listItem);

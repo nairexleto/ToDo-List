@@ -1,5 +1,6 @@
 function addate() {
-  const myinser = document.getElementById("inser");
+  let myinser = document.getElementById("inser");
+
   if (myinser.value === "") {
     alert("enter a date ");
   } else {
@@ -7,11 +8,23 @@ function addate() {
     const dateItem = document.createElement("li");
     dateItem.textContent = myinser.value;
     myliste.appendChild(dateItem);
-    const lienURL = "todoliste.html";
-    const lienElement = document.createElement("a");
-    lienElement.href = lienURL;
-    lienElement.textContent = " add task relative to this date" + myinser.value;
-    myliste.appendChild(lienElement);
+
+    var a = document.createElement("a");
+    const lienBtn = document.createElement("button");
+    lienBtn.textContent = "Add";
+    lienBtn.addEventListener("click", function () {});
+    myliste.appendChild(lienBtn);
+    a.appendChild(lienBtn);
+    a.href = "task.html";
+    a.target = "_blank";
+    myliste.appendChild(a);
   }
   myinser.value = "";
 }
+document.getElementById("inser").min = new Date(
+  new Date().getTime() - new Date().getTimezoneOffset() * 60000
+)
+  .toISOString()
+  .split("T")[0];
+
+const time = document.getElementById("date");

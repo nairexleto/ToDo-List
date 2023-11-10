@@ -3,29 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Tic-Tac⏲</title>
+    <link rel="stylesheet" href="home.css" />
   </head>
-  <body>
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <link rel="stylesheet" href="home.css" />
-        <meta charset="UTF-8" />
-        <title>choose the date</title>
-      </head>
-      <body>
-        <div class="tt">
-          <div id="b">
-            <div id="box">
-              <h1>select a date first</h1>
-              <input type="date" id="inser" placeholder="entrer une date" />
-              <button onclick="addate()" id="dtbox">Ajouter</button>
-              <ul href="todoliste.html" id="tasklist"></ul>
-            </div>
+  <body><div class="container">
+    <div id="pic">
+      <header class="header">
+        <h2>TIC-TAC</h2>
+        <nav class="navbar">
+          <ul id="navitem">
+            <a href="home.html"><li>Home</li></a>
+            <a href=""><li>Setting</li></a>
+            <a href=""><li>About Us</li></a>
+          </ul>
+        </nav>
+      </header>
+      
+          <div id="box1">
+            <h1>CHOOSE DATE</h1>
+            <br />
+            <input type="date" id="inser"  />
+            <button  onclick="addate()" id="buttona">Ajouter</button><br /><br />
+            <ul id="tasklist"></ul>
           </div>
         </div>
-        <script src="date.js"></script>
-      </body>
-    </html>
+      </div>
+    </div></div>
+    <script src="front.js"></script>
+    <script src="date.js"></script>
   </body>
 </html>

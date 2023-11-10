@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('C:/Users/Linda/Downloads/111.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* optionnel - pour fixer le fond en place */
+    background-position: center center;
+  }
+
+#box{
+
+    border: rgb(203, 218, 186);
+    border-style: groove;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px;
+    transition: 0.6s ease-in-out;
+
+}
+#b{
+    margin-top: 8%;
+    margin-left:30%;
+}
+#inser{
+    display: flex
+    float: left
+}
+    border : solid 5px ;
+
+}
+#dtbox{
+    float: right
+}
+#box:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+  box-shadow: 0px 0px 25px rgb(41, 211, 168);}
+

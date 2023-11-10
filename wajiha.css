@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+}
 .header {
   height: 90px;
-  background-color: rgb(177, 188, 197);
+  background-color: rgb(222, 227, 231);
 }
 .header h2 {
   margin-left: 40px;
@@ -14,4 +19,105 @@
 }
 .header h2::after {
   content: "⏲";
+}
+.btn {
+  float: right;
+  margin: 20px;
+  margin-right: 30px;
+  padding: 15px;
+  border-radius: 15px;
+  width: 150px;
+  background-color: rgb(134, 137, 141);
+  animation-name: colorchange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+#signup {
+  margin-right: 10px;
+}
+#login {
+  margin-left: 10px;
+}
+.pic {
+  background-image: url(welcomev2.jpg);
+  min-height: 60vh;
+  width: 30%;
+  float: right;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-right: 40px;
+  animation-name: slideleft;
+  animation-duration: 2s;
+}
+.welcome-designe {
+  height: 85vh;
+  /*background-color: aqua;*/
+}
+#h2 {
+  font-size: 50px;
+  margin-left: 10%;
+  padding-top: 8%;
+}
+#p {
+  font-size: 25px;
+  margin-left: 10%;
+  margin-top: 15px;
+}
+@keyframes slideleft {
+  from {
+    transform: translateY(100%);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateZ(100px);
+  }
+}
+@keyframes grow {
+  100% {
+    transform: scale(1.2);
+  }
+}
+@keyframes colorchange {
+  0% {
+    background-color: rgb(245, 248, 250);
+  }
+  10% {
+    background-color: rgb(197, 197, 241);
+  }
+  20% {
+    background-color: rgb(159, 159, 238);
+  }
+  30% {
+    background-color: rgb(140, 140, 245);
+  }
+  40% {
+    background-color: rgb(84, 84, 250);
+  }
+  50% {
+    background-color: rgb(81, 81, 240);
+  }
+  60% {
+    background-color: rgb(84, 84, 250);
+  }
+  70% {
+    background-color: rgb(140, 140, 245);
+  }
+  80% {
+    background-color: rgb(159, 159, 238);
+  }
+  90% {
+    background-color: rgb(197, 197, 241);
+  }
+  100% {
+    background-color: rgb(245, 248, 250);
+  }
 }

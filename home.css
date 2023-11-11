@@ -73,6 +73,7 @@ ul {
   transition: 0.6s ease-in-out;
   float: left;
   margin-left: 30%;
+  margin-top: 3%;
 }
 .btndate {
   float: left;

@@ -28,7 +28,7 @@
   
 }
 #ggl {
-  color: black;
+  color: rgb(255, 255, 255);
   margin-top: 15px;
   margin-left: 10px;
   margin-bottom: 20px;
@@ -47,9 +47,11 @@
   color: black;
 }
 h1 {
+  color: aliceblue;
   margin-top: 25px;
 }
-#h5 {
+h5 {
+  color: aliceblue;
   margin-top: 10px;
 }
 a {
@@ -63,7 +65,7 @@ a {
 .btn {
   background-color: rgb(38, 102, 158);
   padding: 10px;
-  margin-right: 120px;
+  margin-right: 175px;
   color: aliceblue;
   float: right;
   border-radius: 15px;
